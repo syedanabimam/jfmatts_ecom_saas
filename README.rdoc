@@ -1,7 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+JFMATTS Ecommerce Web Application
+Online Store
+https://safe-bayou-6190.herokuapp.com/
 
 Things you may want to cover:
 
