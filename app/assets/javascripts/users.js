@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
+  Stripe.setPublishableKey($('meta[name="stripe-key"]').prop('content'));
   // Watch for a form submission:
   alert("stop 1");
   $("#form-submit-btn").click(function(event) {
