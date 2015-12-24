@@ -43,8 +43,11 @@ gem 'devise', '3.4.1'
 # Use Stripe for handling payments
 gem 'stripe', '1.16.1'
 
-#Use fugari to hide secret keys
+# Use fugari to hide secret keys
 gem 'figaro', '1.0.0'
+
+# Use paperclip for image uploads
+gem 'paperclip', '4.2.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
