@@ -3,14 +3,74 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-body{
-  background: #DAD299; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #DAD299 , #B0DAB9); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #DAD299 , #B0DAB9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html {
+  position: relative;
+  min-height: 100%;
 }
+
+body{
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+  background: #5D4157; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5D4157 , #A8CABA); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5D4157 , #A8CABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 
 .alert-notice {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
+
+.transparent-bg {
+  background-color: rgba(245, 245, 245, 0.4);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+}
+
+.footer-header-col-scheme{
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+#copyright-text{
+  //position: relative;
+  color: #9d9d9d;
+  display: inline;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+footer div {
+    // margin: 0px auto 0;
+ }
+ 
+ul li{
+   margin-bottom: 0;
+   padding-right: 10px;
+   display: inline;
+   color: #9d9d9d;
+}
+
+footer div ul li a {
+  color: #9d9d9d;
+}
+
+footer div ul li a:hover {
+  text-decoration: none;
+  color: #F3FFFF;
+}
+
+.logo-img{
+    max-width: 100%;
+    height: 100%;
+}
+

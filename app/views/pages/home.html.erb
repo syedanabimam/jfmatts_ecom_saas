@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<div class="jumbotron text-center transparent-bg">
     <h1>Welcome to JFMatts</h1>
     <h3>An online store that values your order</h3>
 </div>
@@ -6,27 +6,27 @@
 <div class="row">
     <% if user_signed_in? %>
         <div class="col-md-6">
-            <div class="well">
+            <div class="well transparent-bg">
                 <h2 class="text-center"><!--<%= "Howdy #{current_user.profile.first_name}, " if current_user.profile %>-->Your Profile! </h2>
                 <% if current_user.profile %>
-                    <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
-                    <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+                    <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block transparent-bg' %>
+                    <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-lg btn-block transparent-bg' %>
                 <% else %>   
                     <p>Create your profile in order to interact with E-store and meet other community members</p>
-                    <%= link_to "Create your profile", new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
+                    <%= link_to "Create your profile", new_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block transparent-bg' %>
                 <% end %>
             </div>
          </div>  
          <div class="col-md-6">
-            <div class="well">
+            <div class="well transparent-bg">
                 <h2 class="text-center">Our Community</h2>
                 <p>Visit the community to meet other sellers and buyers in our E-community!</p>
-                <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
+                <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block transparent-bg' %>
             </div>
          </div>    
     <% else %>
         <div class="col-md-6">
-            <div class="well">
+            <div class="well transparent-bg">
                 <h2 class="text-center">Basic Membership</h2>
                 <h4>Sign up for free and get basic access to E-Market community.</h4>
                 <br/>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="well">
+            <div class="well transparent-bg">
                 <h2 class="text-center">Pro Membership</h2>
                 <h4>Sign up for the pro account for $10/month and get full access to all features of the E-market community and contact information!</h4>
                 <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>

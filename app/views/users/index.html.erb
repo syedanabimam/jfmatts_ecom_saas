@@ -10,7 +10,7 @@
                             <div class="col-sm-4 text-center">
                                 <% if user.profile.avatar %>
                                     <%= link_to user do %>
-                                        <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %> <br/>
+                                        <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar img-profile' %> <br/>
                                     <% end %>
                                 <% end %>
                             </div>
@@ -18,7 +18,7 @@
                                 <%= link_to user do %>
                                     <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
                                 <% end %>
-                                <p>
+                                <p class="contact-txt-color">
                                     <%= user.profile.job_title %>
                                     <% if user.plan_id == 2 %>
                                         <span class="label label-danger">Pro</span>

@@ -9,7 +9,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top footer-header-col-scheme" role="navigation">
  <div class='container'>
    <div class="navbar-header">
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -18,8 +18,10 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
       </button>
-      <%= link_to root_path, class: 'navbar-brand' do %>
+      <%= link_to root_path, :class => 'navbar-brand' do %>
           <i class="fa fa-users"></i>
+          <!--<img class="logo-img" src="logo.png" alt="">-->
+          <!--<%= image_tag 'logo.png', class: 'logo-img img-responsive' %>-->
           JFMatts
       <% end %>
     </div>
@@ -53,6 +55,19 @@
     
     <%= yield %>
 </div>
+
+<!--NEED TO ADD A FOOTER-->
+<footer class="footer footer-header-col-scheme">
+  <div class="Container">
+     <ul class="list-unstyled text-muted text-center">
+        <li id="copyright-text">&#169; 2015 JFMatts Pvt Ltd, All rights reserved</li>
+        <li><%= link_to "Terms ", "#" %></li>
+        <li><%= link_to "Privacy", "#" %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
+      </ul>
+  </div>
+</footer>
+
 
 </body>
 </html>
