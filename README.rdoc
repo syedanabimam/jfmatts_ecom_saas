@@ -1,29 +1,27 @@
 == README
 
 JFMATTS Ecommerce Web Application
-Online Store
-https://safe-bayou-6190.herokuapp.com/
 
-Things you may want to cover:
+https://jfmatts.herokuapp.com/
 
-* Ruby version
+Configurations:
 
-* System dependencies
+* Ruby version: 2.2.1
 
-* Configuration
+* Rails version: 4.1.0
 
-* Database creation
+* Database: Postgresql
 
-* Database initialization
+* Other gems used are: bootstrap, figaro, devise, stripe, paperclip, font-awesome
 
-* How to run the test suite
+* Also using sendgrid for email
 
-* Services (job queues, cache servers, search engines, etc.)
+Current Status:
 
-* Deployment instructions
+* Most of the website if functional i.e. login, payment gateway, membership & community
 
-* ...
+* Website is responsive, however media queries for mobile devices among others have not been added yet
 
+* E-store is currently under development
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+---Features on website may be changed based upon the development plan---
