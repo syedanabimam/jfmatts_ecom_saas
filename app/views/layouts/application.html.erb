@@ -7,6 +7,7 @@
   <%= javascript_include_tag 'application' %>
   <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top footer-header-col-scheme" role="navigation">
@@ -18,11 +19,11 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
       </button>
-      <%= link_to root_path, :class => 'navbar-brand' do %>
-          <i class="fa fa-users"></i>
+      <%= link_to root_path, :class => 'navbar-brand img-responsive' do %>
+          <!--<i class="fa fa-users"></i>-->
           <!--<img class="logo-img" src="logo.png" alt="">-->
-          <!--<%= image_tag 'logo.png', class: 'logo-img img-responsive' %>-->
-          JFMatts
+          <%= image_tag 'logo.png', class: 'logo-img' %>
+          <!--JFMatts-->
       <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
